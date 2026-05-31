@@ -99,6 +99,7 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.45rem); }
 
 p { margin: 0 0 1em; }
 ul { margin: 0 0 1em; padding-left: 1.25em; }
+figure, blockquote { margin: 0; }
 
 /* -------------------------------------------------------------------------
    3. Accessibility helpers
@@ -528,7 +529,16 @@ ul { margin: 0 0 1em; padding-left: 1.25em; }
   font-style: italic;
   margin-bottom: 1.2rem;
 }
-.testimonial__quote::before { content: "“"; color: var(--gold-line); font-family: var(--font-head); font-size: 1.4em; line-height: 0; vertical-align: -0.2em; margin-right: 0.05em; }
+.testimonial__quote::before {
+  content: "\201C";              /* decorative opening quotation mark */
+  display: block;
+  font-family: var(--font-head);
+  font-size: 3rem;
+  line-height: 0.7;
+  color: var(--gold-line);
+  opacity: 0.5;
+  margin-bottom: 0.35rem;
+}
 .testimonial__meta { margin-top: auto; }
 .testimonial__name { font-family: var(--font-head); font-weight: 600; color: var(--deep-indigo); font-size: 1.05rem; }
 .testimonial__role { font-size: 0.82rem; color: var(--amethyst); letter-spacing: 0.04em; text-transform: uppercase; font-weight: 600; }
