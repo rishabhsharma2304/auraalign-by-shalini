@@ -1,0 +1,7 @@
+.DS_Store
+.claude/
+Thumbs.db
+
+# CNAME holds commented placeholder text; GitHub Pages would mis-read it as a
+# custom domain and break the build. Excluded until a real domain is configured.
+CNAME
