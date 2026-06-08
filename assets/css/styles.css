@@ -440,6 +440,12 @@ figure, blockquote { margin: 0; }
 .portrait-frame svg { width: 100%; height: 100%; }
 .hero__portrait { max-width: 420px; margin-inline: auto; }
 
+/* Hero lotus: luminous warm glow so the image feels like it's floating */
+.portrait-frame--lotus {
+  box-shadow: 0 26px 60px rgba(42, 33, 80, 0.12), 0 6px 40px rgba(201, 162, 75, 0.28);
+}
+.portrait-frame--lotus img { object-position: center; }
+
 /* -------------------------------------------------------------------------
    9. Cards & grids
    ------------------------------------------------------------------------- */
